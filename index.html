@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", loadRepos, false);
+    }
+
+   
+
+    </script>
+		
+        <title>Hello World</title>
+    </head>
+    <body onload="onLoad()">
+        <div id="reposHome" data-role="page">
+    		<div data-role="header" data-position="fixed">
+        		<h1>GitHub Search</h1>
+    		</div>
+            <div data-role="content">
+                <a href="http://www.youtube.com/watch?v=dQw4w9WgXcQ" data-role="button">Random link?</a>
+                <a href="#" data-role="button" onclick="button(); return false">alert</a>
+                <ul id="allRepos" data-role="listview"  data-filter="true">
+                </ul>
+            </div>
+		</div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+    </body>
+</html>
